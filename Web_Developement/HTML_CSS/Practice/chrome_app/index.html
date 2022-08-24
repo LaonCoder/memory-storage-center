@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum app</title>
+    <link rel="shortcut icon" href="#">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <audio src="./bgm/Tea Time - Ofshane.mp3" autoplay loop onloadstart="this.volume=0.3"></audio>
+    <div id="login-wrapper">
+        <div id="login-container">
+            <div id="login">
+                <h1 id="logo">Laon Coding</h1>
+                <form id="login-form">
+                    <input class="account" maxlength="15" type="text" placeholder="ID" required/>
+                    <input class="account" minlength="8" maxlength="20" type="text" placeholder="Password" required/>
+                    <!--<input id="pwCheck" class="account" minlength="8" maxlength="20" type="text" placeholder="Password" required/>-->
+                    <button class="account" id="login-button">Log In</button>
+                    <a href="#" id="login-state">로그인</a>
+                    <a href="#" id="registration-state">회원가입</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-wrapper" class="hidden">
+        <h1 id="logo">Laon Coding</h1>
+        <div id="main-container">
+            <h1 id="clock">00:00</h1>
+            <h2 id="greeting"></h2>
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter">
+            </form>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="todo-container">
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
