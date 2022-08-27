@@ -76,5 +76,9 @@
 
 .movie .movie__data {
     min-width: 100px;
+}
 
+.movies a{
+    display: contents;
+    text-decoration: none;
 }
