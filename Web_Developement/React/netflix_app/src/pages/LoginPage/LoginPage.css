@@ -1,0 +1,93 @@
+.login__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../images/login_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.login__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login__banner__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  background-color: black;
+  opacity: 0.95;
+}
+
+.login__banner h2 {
+  margin: 0 0 20px 0;
+  color: #e50914;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login__banner label {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  margin-right: 10px;
+  color: #ccc;
+}
+
+.login__banner input[type="text"],
+.login__banner input[type="password"] {
+  height: 50px;
+  width: 270px;
+  padding: 0 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #141414;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.login__banner input[type="text"]::placeholder,
+.login__banner input[type="password"]::placeholder {
+  font-size: 1.03rem;
+}
+
+.login__banner button[type="button"] {
+  width: 80px;
+  height: 30px;
+  margin-top: 20px;
+  background-color: #e50914;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 50px;
+  width: 290px;
+}
+
+.login__banner button[type="button"]:hover {
+  background-color: #b90710;
+}
+
+.login__banner > h2 {
+    margin-left: -210px;
+    font-size: 35px;
+    color: white;
+}
+
+.nav__image {
+  position: fixed;
+  top: 25px;
+  left: 30px;
+}
+
+.nav__logo {
+  cursor : pointer;
+}
